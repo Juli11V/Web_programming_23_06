@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <title>Основи HTML</title>
+  <meta name="author" content="Julia">
+  <meta name="description" content="Основи HTML">
+  <meta name="keywords" content="html,тестовий приклад,основи html">
+</head>
+
+<body bgcolor="#DCDCDC" opasity=90>
+
+  <a name="startOfPage"></a>
+
+  <h1 text-color="purple"><u><i>Основи HTML</i></u></h1> <!-- #! <u> або <ins>    -->
+    <hr color="pink"  width="75%" size="6" >
+  <p>Technology today is evolving at such a rapid pace, enabling faster change and progress, causing an acceleration of the rate of change, until eventually, it will become exponential. However, it is not only technology trends and top technologies that are evolving, a lot more has changed this year due to the outbreak of COVID-19 making IT professionals realize that their role will not stay the same in the contactless world tomorrow. And an IT professional in 2020-21 will constantly be learning, unlearning, and relearning (out of necessity if not desire).</p>
+ 
+
+  <address>79013, м. Львів, вул. Степана Бандери, 12</address>
+  
+  <ul>
+    <li style="list-style-type: disc;">Rose</li>
+    <li style="list-style-type: circle;">Shine</li>
+    <li style="list-style-type: square;">Cloud</li>
+  </ul>
+
+  <ol text-align="center" type="I" start="1">
+    <li>одиничка</li>
+    <li>двійочка</li>
+    <li>трійочка</li>
+    <li>четвірочка</li>
+    <li>п'ятірочка</li>
+  </ol>
+  
+
+  <a href="../index.html">Перейти на головну сторінку</a>
+  <br>
+
+  <a href="#startOfPage">Перейти на початок сторінки</a>
+  <br>
+
+  <a href="#endOfPage">Перейти на кінець сторінки</a>
+  <br>
+  
+ <hr color="silver" opacity=0.5  width="75%" size="6" > 
+  
+
+  <!-- Зміна розмірів картинки відповідно до ширини екрану -->
+  <img alt="Краєвид" width="30%" height="auto" src="https://images.unsplash.com/photo-1558326567-98ae2405596b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFjYXJvbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+  <br>
+  <table border-doted="2">
+    <colgroup style="background-color: yellow"><col span="2"></colgroup>
+    <colgroup style="background-color: red"><col><col></colgroup>
+    <tr>
+        <th colspan="2">жовтий</th>
+        <th colspan="2">червоний</th>
+    </tr>
+    <tr><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td></tr>
+</table>
+<hr color="purple" size="6" > 
+  
+  
+
+    <label for="user_name">Введіть ім'я користувача</label>
+    <input type="text" id="user_name" placeholder="Ім'я користувача" maxlength="15">
+    <br><br>
+
+    <label for="user_password">Введіть пароль</label>
+    <input type="password" id="user_password" maxlength="8">
+    <br><br>
+    
+  
+    <label for="user_email">Введіть email</label>
+    <input type="email" id="user_email">
+    <br><br>
+    
+
+    <label for="user_date">Виберіть дату</label>
+    <input type="date" id="user_date">
+    <br><br>
+    
+
+    <label for="user_time">Виберіть час</label>
+    <input type="time" id="user_time">
+    <br><br>
+
+    <label for="user_color">Виберіть улюблений колір</label>
+    <input type="color" id="user_color">
+    <br><br>
+    
+
+    <label for="user_file">Виберіть файл</label>
+    <input type="file" id="user_file">
+    <br><br>
+    
+
+    <label for="user_checkbox">У вас є автомобіль?</label>
+    <input type="checkbox" id="user_checkbox">
+    <br><br>
+
+    <label for="user_radio">Виберіть вашу стать</label>
+    <input type="radio" id="user_radio" name="gender" value="male">чол.
+    <input type="radio" id="user_radio" name="gender" value="female">жін.
+    <br><br>
+    
+    <label for="user_select">Виберіть пору року</label>
+    <select id="user_select">
+      <option>Зима</option>
+      <option>Весна</option>
+      <option>Літо</option>
+      <option>Осінь</option>
+    </select>
+    <br><br>
+    
+
+    <textarea placeholder="Введіть ваш текст" cols="25" rows="5"></textarea>
+    
+    <hr color=grey>
+    
+
+    <button type="button" bg-color=red>Кнопочка</button>
+   
+  
+  </form>
+  
+</body>
+
+</html>
