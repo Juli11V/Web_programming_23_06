@@ -141,7 +141,7 @@ function img() {
           .pipe(dest("build/"));                     // Переміщуємо у папку build/
 }
 function images() {
-    return src(["app/img/**/*.{png,jpg,jpeg,gif}",
+    return src(["app/images/**/*.{png,jpg,jpeg,gif}",
                 "app/data/**/*.{png,jpg,jpeg,gif}"], // Беремо файли з розширеннями png, jpg, jpeg, gif
                { base: "app" })                      // Задаємо параметр base, щоб зберегти вложеність файлів
           .pipe(newer("build/"))                     // Відфільтровуємо лише змінені файли
@@ -180,6 +180,8 @@ function watchForFiles() {
     // Слідкуємо за змінами файлів зображень
     watch("app/img/**/*")
    .on("all", series(img, browser_sync.reload));
+   watch("app/images/**/*")
+   .on("all", series(images, browser_sync.reload));
 
 }
 
@@ -194,7 +196,7 @@ function deployOnGitHub() {
 // ...............................................................................................
 
 // Збирання проекту
-exports.build = series(cleanBuild, html, css, preprocessCss, js, txt, img);
+exports.build = series(cleanBuild, html, css, preprocessCss, js, txt, img,images);
 
 // Завдання за замовчуванням
 exports.default = parallel(series(exports.build, browserSync), watchForFiles);
