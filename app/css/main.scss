@@ -1,0 +1,494 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #20042e;
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+    max-width: 1366px;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px 0;
+}
+
+/* Container
+-------------------------------------------------*/
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* Header
+-------------------------------------------------*/
+.header {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 15px 0px;
+    border-bottom: 1px solid #20042e;
+    background-color: #ddbbff;
+    opacity: 0.7;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    background-color: white;
+    border: 1px solid #20042e;
+}
+
+/* Nav
+-------------------------------------------------*/
+
+.left_nav,
+.right_nav {
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.nav_link {
+    color: #20042e;
+    text-decoration: none;
+    transition: font-weight 0.3s;
+    margin-right: 30px;
+
+    &:hover {
+        font-weight: 550;
+        color: #000000;
+        text-decoration: underline;
+    }
+}
+
+.right_nav :last-child {
+    margin-right: 0;
+}
+
+.left_nav :last-child {
+    margin-right: 0;
+}
+
+/* Itro
+-------------------------------------------------*/
+.intro {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1366px;
+    height: 656px;
+    background: no-repeat #ddbbff url("../images/bg_1p.jpg");
+    opacity: 0.85;
+    background-size: cover;
+    padding-top: 100px;
+}
+
+.intro_inner {
+    width: 100%;
+    max-width: 370px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.intro_title {
+    margin: 0 0 60px;
+    text-transform: uppercase;
+    font-size: 64px;
+    font-weight: 800;
+    opacity: 1;
+}
+
+/* Button  Blue
+-------------------------------------------------*/
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px 20px;
+    margin: 0 62px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 800;
+    text-decoration: none;
+
+    &:hover {
+        color: #c4c4c4;
+    }
+}
+
+.btn_blue {
+    background-color: #20042e;
+}
+
+/* Posters 
+-------------------------------------------------*/
+.poster {
+    background: rgb(255, 226, 255);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1366px;
+    height: 656px;
+    background-size: cover;
+}
+
+.poster_inner {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.poster_title {
+    width: 100%;
+    margin-bottom: 3px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.products {
+    border-top: 2px solid #20042e;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.product {
+    margin-top: 30px;
+    width: 235px;
+    background-color: rgb(221, 187, 255);
+}
+
+.poster_img {
+    margin: 25px;
+    display: flex;
+    width: 180px;
+}
+
+.product_title {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.product_nav {
+    padding: 10px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product_price {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    width: auto;
+}
+
+.narrow_white {
+    display: flex;
+    font-size: 35px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0;
+    padding-bottom: 10px;
+
+    &:hover {
+        color: #c4c4c4;
+    }
+}
+
+/* Lavanda decoration
+-------------------------------------------------*/
+.lavanda_left {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 40px;
+    left: 30px;
+    background: url("../images/lavanda.png") no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+/* Cards about novelties of week
+-------------------------------------------------*/
+.cards {
+    background: rgb(255, 226, 255);
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1366px;
+    height: 656px;
+    background-size: cover;
+}
+
+.card1 {
+    position: relative;
+    display: flex;
+    margin: 0 100px;
+    width: 610px;
+    height: 330px;
+    background: #fff;
+    box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
+}
+
+.body_card1 {
+    max-width: 340px;
+    margin: 45px;
+}
+
+.title_card1 {
+    font-weight: 800;
+    font-size: 26px;
+    color: #20042e;
+    width: 100%;
+}
+
+.data_card1 {
+    display: flex;
+    font-weight: 800;
+    font-size: 15px;
+    color: #20042e;
+    width: auto;
+    justify-content: end;
+    margin: 18px 0;
+}
+
+.info_product_card1 {
+    border: 2px solid #ddbbff;
+}
+
+.title_product_card1 {
+    display: flex;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: #20042e;
+    margin: 25px 38px 35px 38px;
+}
+
+.new_price_product {
+    display: flex;
+    justify-content: space-between;
+    size: 15px;
+    color: #20042e;
+    font-weight: 600;
+    margin: 45px 40px 25px;
+}
+
+.old_price {
+    color: #c4c4c4;
+    font-weight: 400;
+}
+
+.card2 {
+    position: absolute;
+    margin: 5px 100px;
+    width: 458px;
+    height: 285px;
+    background: url(../images/macaruns.png);
+    top: 260px;
+    left: 545px;
+    background-size: cover;
+    display: flex;
+    box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
+}
+
+.title_card2 {
+    font-size: 14px;
+    font-weight: 800;
+    color: #20042e;
+    width: auto;
+    padding: 55px 100px 50px 150px;
+}
+
+/* Button  Purple
+-------------------------------------------------*/
+.btn_card1 {
+    position: absolute;
+    top: 445px;
+    left: 355px;
+    display: flex;
+}
+
+.btn_purple {
+    background: #ddbbff;
+    font-size: 14px;
+    padding: 5px 20px;
+    margin: 0;
+}
+
+/* Lavanda 2 decoration
+-------------------------------------------------*/
+.lavanda2_left {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 50px;
+    left: 0;
+    background: url("../images/lavanda2.png") no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+/* Сarousel
+-------------------------------------------------*/
+.carousel {
+    background: rgb(255, 226, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1366px;
+    height: 656px;
+    background-size: cover;
+}
+
+#carouselExampleIndicators {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#carouselExampleIndicators {
+    width: 100%;
+    height: 500px;
+}
+.carousel-inner {
+    display: flex;
+    width: 600px;
+    height: 400px;
+}
+.carousel-item {
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+.carousel-control-next-icon {
+    background-image: url(../images/next.png);
+    background-position: 90%;
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../images/prev.png);
+    background-position: 90%;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #20042e;
+}
+
+.carousel-indicators {
+    margin-bottom: 1rem;
+}
+.title_carousel {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+.carousel-control-next {
+    left: 600px;
+}
+.carousel-control-prev {
+    left: -90px;
+}
+
+/* Footer
+-------------------------------------------------*/
+.footer {
+    padding-top: 15px;
+    background: #765981;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1366px;
+    height: 150px;
+}
+.footer_inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribes,
+.acort,
+.connection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_title_1,
+.footer_title_2,
+.footer_title_3 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.pages,
+.footer_acort {
+    align-items: center;
+    padding-top: 35px;
+    margin-left: 20px;
+}
+
+.connect {
+    align-items: center;
+    padding-top: 14px;
+    margin-left: 20px;
+}
+
+.nav_facebook,
+.nav_instagram,
+.nav_pinterest,
+.nav_phone,
+.nav_email,
+.nav_cakes1,
+.nav_cakes2,
+.nav_macaruns,
+.nav_desert,
+.nav_eclers,
+.nav_lollipops {
+    color: #c4c4c4;
+    font-size: 14px;
+    text-decoration: none;
+    transition: font-weight 0.3s;
+
+    &:hover {
+        font-weight: 550;
+        color: #000000;
+        text-decoration: underline;
+    }
+}
