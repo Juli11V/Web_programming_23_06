@@ -21,7 +21,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  max-width: 1366px;
   height: 656px;
   background-color: #ffe2ff;
   background-size: cover;

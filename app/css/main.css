@@ -6,7 +6,6 @@ body {
   color: #20042e;
   -webkit-font-smoothing: antialiased;
   width: 100%;
-  max-width: 1366px;
 }
 
 *,
@@ -117,7 +116,6 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  max-width: 1366px;
   height: 656px;
   background: no-repeat #ddbbff url("../images/bg_1p.jpg");
   opacity: 0.85;
@@ -178,7 +176,6 @@ p {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 1366px;
   height: 656px;
   background-size: cover;
 }
@@ -298,7 +295,6 @@ p {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 1366px;
   height: 656px;
   background-size: cover;
 }
@@ -448,7 +444,6 @@ p {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 1366px;
   height: 656px;
   background-size: cover;
 }
@@ -534,7 +529,6 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  max-width: 1366px;
   height: 150px;
 }
 
