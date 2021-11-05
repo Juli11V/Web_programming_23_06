@@ -140,7 +140,15 @@ function img() {
                             silent: !log }))         // Стискаємо зображення
           .pipe(dest("build/"));                     // Переміщуємо у папку build/
 }
-
+function images() {
+    return src(["app/img/**/*.{png,jpg,jpeg,gif}",
+                "app/data/**/*.{png,jpg,jpeg,gif}"], // Беремо файли з розширеннями png, jpg, jpeg, gif
+               { base: "app" })                      // Задаємо параметр base, щоб зберегти вложеність файлів
+          .pipe(newer("build/"))                     // Відфільтровуємо лише змінені файли
+          .pipe(image_min({ verbose: log,
+                            silent: !log }))         // Стискаємо зображення
+          .pipe(dest("build/"));                     // Переміщуємо у папку build/
+}
 // Очищуємо папку зібраного проекту
 function cleanBuild() {
     return del("build/**/*", { force: true });    // Очищуємо папку перед збиранням проекту
