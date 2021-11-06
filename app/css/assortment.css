@@ -33,11 +33,22 @@
   font-weight: 800;
 }
 
+.endd {
+  text-align: end;
+  padding-right: 200px;
+}
+
+.hr {
+  width: 80%;
+  color: #20042e;
+}
+
 .row {
   margin: 0;
 }
 
 div.row.cards {
+  padding-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,12 +66,12 @@ div.row.cards {
 }
 
 .offer {
-  padding-bottom: 40px;
+  padding-bottom: 5px;
 }
 
 .card {
   background-color: #fdf0f4;
-  margin: 7px;
+  margin: 10px 7px;
 }
 
 .card__title {
@@ -76,6 +87,10 @@ div.row.cards {
   -webkit-box-shadow: 0px 10px 30px rgba(150, 6, 52, 0.1);
           box-shadow: 0px 10px 30px rgba(150, 6, 52, 0.1);
   border-radius: 5px;
+}
+
+.tabs-contents {
+  border-left: #20042e;
 }
 
 .tab-content {
@@ -106,7 +121,7 @@ div.row.cards {
 
 .tab_describ {
   width: 430px;
-  padding-right: 25px;
+  padding-right: 20px;
 }
 
 .prod_title {
@@ -135,5 +150,9 @@ div.row.cards {
 
 .text_white:hover {
   color: #ffffff;
+}
+
+.tabs-contents {
+  padding-top: 30px;
 }
 /*# sourceMappingURL=assortment.css.map */
