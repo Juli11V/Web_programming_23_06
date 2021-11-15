@@ -13,13 +13,15 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-
-    height: 656px;
+    // height: 656px;
     background-color: rgb(255, 226, 255);
     background-size: cover;
     padding-top: 100px;
+    padding-bottom: 50px;
 }
-
+.m2 {
+    padding-top: 0px;
+}
 // вторая секция ----------------------------------
 .menu__title {
     padding: 40px 0 20px 0;
@@ -48,9 +50,23 @@ div.row.cards {
     padding-bottom: 5px;
 }
 
-.card {
+.card,
+.card_2 {
     background-color: #fdf0f4;
     margin: 10px 7px;
+}
+.card_2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+.c2 {
+    margin: 10px;
 }
 .card__title {
     width: 100%;
@@ -64,8 +80,14 @@ div.row.cards {
     box-shadow: 0px 10px 30px rgba(150, 6, 52, 0.1);
     border-radius: 5px;
 }
+.card_2.active {
+    background: #f9d9ff;
+    box-shadow: 0px 10px 30px rgba(150, 6, 52, 0.1);
+    border-radius: 5px;
+}
 
-.tab-content {
+.tab-content,
+.tab_content_2 {
     display: none;
 }
 .tab_info {
@@ -73,6 +95,9 @@ div.row.cards {
     justify-content: space-between;
 }
 .tab-content.active {
+    display: block;
+}
+.tab_content_2.active {
     display: block;
 }
 .poster_img {
@@ -95,6 +120,11 @@ div.row.cards {
     font-weight: 400;
     padding: 35px 0 5px 0px;
 }
+.prod_title_2 {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 45px 0 0px 0px;
+}
 .text_white {
     display: flex;
     font-size: 13px;
@@ -107,6 +137,9 @@ div.row.cards {
     &:hover {
         color: #ffffff;
     }
+}
+.t2 {
+    padding: 3px;
 }
 .tabs-contents {
     padding-top: 30px;
