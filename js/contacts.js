@@ -1,0 +1,1 @@
+$.validator.addMethod("regex",(function(e,r,t){return new RegExp(t).test(e)}),"Please check your input"),$("form").validate({rules:{firstName:{required:!0,regex:"[A-Za-z]{1,32}"},phoneNumber:{digits:!0,required:!0,minlegth:10,maxlength:11,regex:"[0-9]+"}},messages:{firstName:"������ ���� ��� ��������",phoneNumber:"������ ��� �����"}});

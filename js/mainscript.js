@@ -1,1 +1,0 @@
-$(".card").on("click",(function(){var a=$(this).parent().index();$(".card").removeClass("card-active"),$(this).addClass("card-active"),$(".tab-content").removeClass("active"),$(".tab-content").eq(a).addClass("active")}));
