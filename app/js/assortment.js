@@ -19,3 +19,14 @@ $('.card_2').on('click',function(){
     $('.tab_content_2').eq(currTab).addClass('active');
 })
 }
+{
+    $('.card_3').on('click',function(){
+        let currTab=$(this).parent().index();
+    
+        $('.card_3').removeClass('active');
+        $(this).addClass('active');
+    
+        $('.tab_content_3').removeClass('active');
+        $('.tab_content_3').eq(currTab).addClass('active');
+    })
+    }

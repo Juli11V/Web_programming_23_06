@@ -283,118 +283,6 @@ p {
           align-items: center;
 }
 
-/* Cards about novelties of week
--------------------------------------------------*/
-.cards {
-  background: #ffe2ff;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 656px;
-  background-size: cover;
-}
-
-.card1 {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 100px;
-  width: 610px;
-  height: 330px;
-  background: #fff;
-  -webkit-box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
-          box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
-}
-
-.body_card1 {
-  max-width: 340px;
-  margin: 45px;
-}
-
-.title_card1 {
-  font-weight: 800;
-  font-size: 26px;
-  color: #20042e;
-  width: 100%;
-}
-
-.data_card1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: 800;
-  font-size: 15px;
-  color: #20042e;
-  width: auto;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  margin: 18px 0;
-}
-
-.info_product_card1 {
-  border: 2px solid #ddbbff;
-}
-
-.title_product_card1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  font-weight: 600;
-  font-size: 18px;
-  color: #20042e;
-  margin: 25px 38px 35px 38px;
-}
-
-.new_price_product {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  size: 15px;
-  color: #20042e;
-  font-weight: 600;
-  margin: 45px 40px 25px;
-}
-
-.old_price {
-  color: #c4c4c4;
-  font-weight: 400;
-}
-
-.card2 {
-  position: absolute;
-  margin: 5px 100px;
-  width: 458px;
-  height: 285px;
-  background: url(../images/macaruns.png);
-  top: 260px;
-  left: 545px;
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
-          box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
-}
-
-.title_card2 {
-  font-size: 14px;
-  font-weight: 800;
-  color: #20042e;
-  width: auto;
-  padding: 55px 100px 50px 150px;
-}
-
 /* Button  Purple
 -------------------------------------------------*/
 .btn_card1 {
@@ -411,23 +299,6 @@ p {
   font-size: 14px;
   padding: 5px 20px;
   margin: 0;
-}
-
-/* Lavanda 2 decoration
--------------------------------------------------*/
-.lavanda2_left {
-  position: absolute;
-  width: 100%;
-  height: 80%;
-  top: 50px;
-  left: 0;
-  background: url("../images/lavanda2.png") no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 /* Сarousel
@@ -612,5 +483,32 @@ p {
   font-weight: 550;
   color: #000000;
   text-decoration: underline;
+}
+
+/*Nav crol
+----------------------------------*/
+.nav_crol {
+  position: absolute;
+  width: 5%;
+  bottom: 0px;
+  right: 0;
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navs {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.img_n {
+  width: 50px;
+  padding: 5px;
 }
 /*# sourceMappingURL=main.css.map */

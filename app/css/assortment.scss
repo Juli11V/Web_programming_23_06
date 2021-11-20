@@ -13,26 +13,28 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    // height: 656px;
     background-color: rgb(255, 226, 255);
     background-size: cover;
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 .m2 {
     padding-top: 0px;
 }
-// вторая секция ----------------------------------
+// друга/третя секція ----------------------------------
 .menu__title {
     padding: 40px 0 20px 0;
     text-align: center;
     font-weight: 800;
 }
-.endd {
+.endd{
+    text-align: end;
+    padding-right: 170px;
+}
+.endd1{
     text-align: end;
     padding-right: 200px;
 }
-
 .row {
     margin: 0;
 }
@@ -51,11 +53,13 @@ div.row.cards {
 }
 
 .card,
-.card_2 {
+.card_2,
+.card_3 {
     background-color: #fdf0f4;
     margin: 10px 7px;
 }
-.card_2 {
+.card_2,
+.card_3 {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -80,14 +84,16 @@ div.row.cards {
     box-shadow: 0px 10px 30px rgba(150, 6, 52, 0.1);
     border-radius: 5px;
 }
-.card_2.active {
+.card_2.active,
+.card_3.active {
     background: #f9d9ff;
     box-shadow: 0px 10px 30px rgba(150, 6, 52, 0.1);
     border-radius: 5px;
 }
 
 .tab-content,
-.tab_content_2 {
+.tab_content_2,
+.tab_content_3 {
     display: none;
 }
 .tab_info {
@@ -97,7 +103,8 @@ div.row.cards {
 .tab-content.active {
     display: block;
 }
-.tab_content_2.active {
+.tab_content_2.active,
+.tab_content_3.active {
     display: block;
 }
 .poster_img {
